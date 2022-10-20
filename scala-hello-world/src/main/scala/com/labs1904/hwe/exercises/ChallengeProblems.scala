@@ -130,21 +130,21 @@ object ChallengeProblems {
   12. Same as question 11, but this time you are given a list of Option[Ints], returns the minimum of the Ints provided.
   If no ints are provided, return None.
  */
-  //    def minimumOption(l: List[Option[Int]]): Option[Int] = {
-  //      if (l.isEmpty) {
-  //        None
-  //      } else {
-  ////        Some(l.min)
-  //        l.min
-  //      }
-  //    }
+      def minimumOption(l: List[Option[Int]]): Option[Int] = {
+        if (l.isEmpty) {
+          None
+        } else {
+  //        Some(l.min)
+          l.min
+        }
+      }
 
-  def minimumOption(l: List[Option[Int]]): Option[Int] = {
-    l.flatten match {
-      case data => Some(data.min)
-      case Nil => None
-    }
-  }
+//  def minimumOption(l: List[Option[Int]]): Option[Int] = {
+//    l.flatten match {
+//      case data => Some(data.min)
+//      case Nil => None
+//    }
+//  }
 
 
 }
